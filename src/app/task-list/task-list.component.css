@@ -1,14 +1,33 @@
 .container {
-    max-width: 500px;
-    margin: 2rem auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #5be0e063;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: rgba(91, 224, 224, 0.363);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  position: relative;
+  backdrop-filter: blur(2px); 
+  border: 1px solid rgba(0, 16, 241, 0.3);
+}
+  #titulo{
+    color: #0255ad;
+    text-align: center;
+    gap: 10px;
+    margin: 0.8rem 0;
+    padding: 1px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    position: relative;
+    border-radius: 10px;
+    background-color: #43c0a580;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
   }
   
+  body {
+    background: linear-gradient(135deg, #f5f7fa, #0464ff);
+    background-attachment: fixed; 
+  }
   .input-section {
     display: flex;
     gap: 10px;
@@ -93,3 +112,4 @@
   .complete-btn:hover {
     background-color: #218838 !important;
   }
+
