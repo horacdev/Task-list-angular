@@ -24,7 +24,7 @@ export class TaskListComponent {
       this.showError = false;
     } else {
       this.showError = true;
-      setTimeout(() => this.showError = false, 2000); // Auto-esconde após 2s
+      setTimeout(() => this.showError = false, 4000); // Auto-esconde após 2s
     }
   }
 
