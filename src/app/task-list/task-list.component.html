@@ -1,12 +1,16 @@
 <div class="container">
-    <div class="input-section">
-      <input 
-        type="text" 
-        [(ngModel)]="newTask" 
-        placeholder="Nova tarefa"
-        (keyup.enter)="addTask()"
-      >
-      <button (click)="addTask()">Adicionar</button>
+  <div class="input-section">
+    <input 
+      type="text" 
+      [(ngModel)]="newTask" 
+      placeholder="Nova tarefa"
+      (keyup.enter)="addTask()"
+      [class.error]="showError"
+    >
+    <button (click)="addTask()">Adicionar</button>
+  </div>
+    <div class="error-container" *ngIf="showError">
+      <span class="error-message">Por favor, insira uma tarefa!</span>
     </div>
   
     <ul class="task-list">
@@ -15,9 +19,9 @@
           <span>{{ task.name }}</span>
           <div class="actions">
             <button class="complete-btn" (click)="toggleCompleted(i)">
-              {{ task.completed ? '✓' : '?' }}
+              {{ task.completed ? '✓' : 'Concluir' }}
             </button>
-            <button class="remove-btn" (click)="removeTask(i)">×</button>
+            <button class="remove-btn" (click)="removeTask(i)">Remover</button>
           </div>
         </li>
       </ul>
