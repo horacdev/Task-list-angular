@@ -1,2 +1,0 @@
-export default `html,body{height:100%;margin:0;padding:0}body{background:linear-gradient(135deg,#a275eb,#0a4963) fixed;font-family:Lucida Sans,sans-serif}
-`;
