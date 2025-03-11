@@ -28,13 +28,8 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
+         
           },
           "configurations": {
             "production": {
@@ -59,18 +54,6 @@
             }
           },
           "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "todo-list:build:production"
-            },
-            "development": {
-              "buildTarget": "todo-list:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
