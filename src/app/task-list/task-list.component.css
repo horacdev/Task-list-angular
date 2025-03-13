@@ -15,9 +15,10 @@
     gap: 10px;
     margin: 0.8rem 0;
     padding: 1px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.425);
     border-radius: 10px;
     background-color: #43c0a580;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.637);
   }
   html, body {
     height: 100%;
